@@ -83,6 +83,13 @@ int main() {
     printf ("Densidade Populacional: %.2lf \n", densidade2);
 
 
+    // Exibe os atributos de disputa entre o Jogador 01 e Jogador 02.
+    printf (" \n ----- Comparação das Cartas ----- \n");
+    printf ("País: %s - Código da Carta: %s%s - População: %d \n", pais1, codigoEstado1, codigoCidade1, populacao1);
+    printf ("País: %s - Código da Carta: %s%s - População: %d \n", pais2, codigoEstado2, codigoCidade2, populacao2);
+
+
+
 
 
 

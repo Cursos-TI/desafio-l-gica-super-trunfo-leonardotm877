@@ -89,9 +89,14 @@ int main() {
     printf ("País: %s - Código da Carta: %s%s - População: %d \n", pais2, codigoEstado2, codigoCidade2, populacao2);
 
 
-
-
-
+    // Compara e mostra qual é o jogador vencedor.
+    if (populacao1 > populacao2) {
+    printf ("Jogador 1 venceu! \n"); 
+} else if (populacao2 > populacao1) {
+    printf ("Jogador 2 venceu! \n"); 
+} else {
+    printf ("Empate!");
+}
 
 
     return 0;

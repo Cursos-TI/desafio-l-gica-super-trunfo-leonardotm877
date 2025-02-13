@@ -48,6 +48,39 @@ int main() {
     printf ("Densidade Populacional: %.2lf \n", densidade1);
 
 
+    // Coleta as informações inseridas pelo usuário para o Jogador 02.
+    printf (" \n ----- Jogador 02 ----- \n");
+    printf ("Digite o país: ");
+    scanf ("%s", pais2);
+    printf ("Digite o Código do Estado: ");
+    scanf ("%s", codigoEstado2);
+    printf ("Digite o Código da Cidade: ");
+    scanf ("%s", codigoCidade2);
+    printf ("Digite a população: ");
+    scanf ("%d", &populacao2);
+    printf ("Digite a área (km²): ");
+    scanf ("%f", &area2);
+    printf ("Digite o PIB: ");
+    scanf ("%lf", &pib2);
+    printf ("Digite o n° de Pontos Turísticos: ");
+    scanf ("%d", &turismo2);
+
+
+    // Cálculo do PIB per capita e Densidade Populacional para o Jogador 02.
+    pibPercapita2 = (populacao2 > 0) ? pib2 / populacao2 : 0;
+    densidade2 = (area2 > 0) ? populacao2 / area2 : 0;
+
+
+    // Exibição dos atributos inseridos pelo usuário para o Jogador 02.
+    printf (" \n Jogador 02 \n");
+    printf ("País: %s \n", pais2);
+    printf ("Código da Carta: %s%s \n", codigoEstado2, codigoCidade2);
+    printf ("População: %d \n", populacao2);
+    printf ("Área: %.2f km²", area2);
+    printf ("PIB: %.2lf \n", pib2);
+    printf ("Pontos Turísticos: %d \n", turismo2);
+    printf ("PIB per capita: %.2lf \n", pibPercapita2);
+    printf ("Densidade Populacional: %.2lf \n", densidade2);
 
 
 
